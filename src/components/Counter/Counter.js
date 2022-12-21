@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import Register from '../Register/Register'
 
 const Counter = () => {
     const [count, setCount] = useState(0)
@@ -22,6 +23,9 @@ const Counter = () => {
                                 <Button onClick={handleDecrement} variant='success'>Decrement</Button>
                             </Card.Body>
                         </Card>
+                    </Col>
+                    <Col >
+                        <Register />
                     </Col>
                 </Row>
             </Container>
