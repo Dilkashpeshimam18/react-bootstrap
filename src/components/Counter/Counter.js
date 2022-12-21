@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
-import Register from '../Register/Register'
 
 const Counter = () => {
     const [count, setCount] = useState(0)
@@ -14,7 +13,7 @@ const Counter = () => {
         <>
             <Container className='mt-5'>
                 <Row>
-                    <Col xs={4}>
+                    <Col xs={10}>
                         <Card className='shadow-lg'>
                             <Card.Body>
                                 <p className='display-6'>Counter</p>
@@ -24,9 +23,7 @@ const Counter = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col >
-                        <Register />
-                    </Col>
+
                 </Row>
             </Container>
         </>
